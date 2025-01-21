@@ -18,9 +18,26 @@
       }
       .button-container {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+      }
+      .section {
+        text-align: center;
+      }
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: bold;
+      }
+      .Angular,
+      .React {
+        display: flex;
         justify-content: center;
         gap: 20px;
-        margin-top: 50px;
+        margin-top: 10px;
       }
       .button {
         padding: 15px 30px;
@@ -40,21 +57,31 @@
   <body>
     <h1>Welcome to My Projects</h1>
     <div class="button-container">
-      <a
-        href="https://gianigiani.github.io/angular-wizard/"
-        class="button"
-        >Weekly Wizard</a
-      >
-      <a
-        href="https://gianigiani.github.io/devlogger-angular/"
-        class="button"
-        >Devlogger</a
-      >
-       <a
-        href="https://gianigiani.github.io/react-wizard/"
-        class="button"
-        >React Wizard</a
-      >
+      <div class="section">
+        <div class="section-title">Angular</div>
+        <div class="Angular">
+          <a
+            href="https://gianigiani.github.io/angular-wizard/"
+            class="button"
+            >Weekly Wizard</a
+          >
+          <a
+            href="https://gianigiani.github.io/devlogger-angular/"
+            class="button"
+            >Devlogger</a
+          >
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">React</div>
+        <div class="React">
+          <a
+            href="https://gianigiani.github.io/react-wizard/"
+            class="button"
+            >React Wizard</a
+          >
+        </div>
+      </div>
     </div>
   </body>
 </html>
